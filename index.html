@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوسف حمدي شحاته | استديو المونتاج والرسوم المتحركة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- خط الرقعة الرئيسي -->
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- خط النسخ للعناوين الفرعية -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- خط Cairo للتوازن -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- قائمة التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text pulse ruqaa-font">YHS</span>
+                <span class="logo-full ruqaa-font">يوسف حمدي شحاته</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span class="ruqaa-font">الرئيسية</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span class="ruqaa-font">من أنا</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="ruqaa-font">المهارات</span>
+                </a>
+                <a href="#software" class="nav-link" data-section="software">
+                    <i class="fas fa-laptop-code"></i>
+                    <span class="ruqaa-font">البرامج</span>
+                </a>
+                <a href="#pricing" class="nav-link" data-section="pricing">
+                    <i class="fas fa-tags"></i>
+                    <span class="ruqaa-font">الباقات</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span class="ruqaa-font">تواصل</span>
+                </a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="lang-switch floating" id="langSwitch">EN</button>
+                <button class="theme-switch floating" id="themeSwitch">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="menu-toggle floating" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- مؤشر التنقل المتحرك -->
+        <div class="nav-indicator"></div>
+    </nav>
+
+    <!-- الخلفيات المتحركة -->
+    <div class="animated-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+        <div class="particles-container" id="particles"></div>
+    </div>
+
+    <!-- القسم البطل -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <!-- تأثيرات سينمائية -->
+            <div class="film-strip"></div>
+            <div class="camera-aperture"></div>
+            
+            <div class="cinematic-container">
+                <div class="cinematic-line top-line"></div>
+                
+                <div class="name-animation">
+                    <div class="name-part part-1 glitch ruqaa-font" data-text="يوسف حمدي شحاته">يوسف حمدي شحاته</div>
+                    <div class="name-part part-2 gradient-text naskh-font">Youssef Hamdy Shehata</div>
+                    <div class="title-animation">
+                        <span class="title-text typing ruqaa-font">استديو المونتاج والرسوم المتحركة</span>
+                        <span class="title-text slide-in naskh-font">Editing & Motion Studio</span>
+                    </div>
+                </div>
+                
+                <div class="cinematic-line bottom-line"></div>
+            </div>
+            
+            <div class="profile-container">
+                <!-- إطار ثلاثي الأبعاد -->
+                <div class="profile-frame">
+                    <div class="frame-3d">
+                        <div class="frame-side frame-front"></div>
+                        <div class="frame-side frame-back"></div>
+                        <div class="frame-side frame-top"></div>
+                        <div class="frame-side frame-bottom"></div>
+                        <div class="frame-side frame-left"></div>
+                        <div class="frame-side frame-right"></div>
+                    </div>
+                    
+                    <div class="profile-image floating">
+                        <img src="images/profile.jpg" alt="يوسف حمدي شحاته" id="profileImg">
+                        <div class="image-overlay"></div>
+                        <div class="scan-line"></div>
+                    </div>
+                    
+                    <!-- تأثيرات حول الصورة -->
+                    <div class="profile-effects">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                        <div class="particles"></div>
+                    </div>
+                </div>
+                
+                <!-- معلومات سريعة -->
+                <div class="quick-info">
+                    <div class="info-card floating">
+                        <div class="info-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="ruqaa-font">العمر</h4>
+                            <p class="naskh-font">18 سنة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card floating">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="ruqaa-font">المحافظة</h4>
+                            <p class="naskh-font">المنوفية - مصر</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card floating">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="ruqaa-font">الدراسة</h4>
+                            <p class="naskh-font">كلية التمريض</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- مؤشر التمرير -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                </div>
+                <p class="naskh-font">مرر لأسفل</p>
+            </div>
+            
+            <!-- موجات متحركة -->
+            <div class="waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من أنا -->
+    <section id="about" class="section about-section">
+        <div class="section-header">
+            <h2 class="section-title glitch ruqaa-font" data-text="من أنا">من أنا</h2>
+            <div class="section-subtitle naskh-font">فيديو إيديتور & مونتير محترف</div>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <div class="about-card floating">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3 class="ruqaa-font">يوسف حمدي شحاته</h3>
+                        <div class="card-badge ruqaa-font">مونتاج إبداعي</div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="highlight naskh-font">فيديو إيديتور ومونتير محترف أقدم تجربة بصرية متكاملة.</p>
+                        <p class="naskh-font">أعتمد على الموشن جرافيك، الإيقاع، والانيميشن لإخراج أعمال قوية وعصرية تناسب السوق الرقمي الحديث.</p>
+                        <p class="naskh-font">أمتلك خبرة في تحويل الأفكار البسيطة إلى محتوى مرئي جذاب ومؤثر، مع الاهتمام بأدق التفاصيل لتحقيق الجودة العالية.</p>
+                        
+                        <div class="specialties">
+                            <div class="specialty">
+                                <i class="fas fa-video"></i>
+                                <span class="ruqaa-font">مونتاج فيديو</span>
+                            </div>
+                            <div class="specialty">
+                                <i class="fas fa-film"></i>
+                                <span class="ruqaa-font">موشن جرافيك</span>
+                            </div>
+                            <div class="specialty">
+                                <i class="fas fa-paint-brush"></i>
+                                <span class="ruqaa-font">تصميم جرافيكي</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="stat-number spin ruqaa-font">50+</div>
+                            <div class="stat-label naskh-font">مشروع مكتمل</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number spin ruqaa-font">3+</div>
+                            <div class="stat-label naskh-font">سنوات خبرة</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number spin ruqaa-font">100%</div>
+                            <div class="stat-label naskh-font">رضا عملاء</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-visual">
+                <div class="visual-container">
+                    <!-- شريط فيديو متحرك -->
+                    <div class="video-timeline">
+                        <div class="timeline-track">
+                            <div class="timeline-progress"></div>
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="timeline-labels">
+                            <span class="ruqaa-font">التخطيط</span>
+                            <span class="ruqaa-font">التصوير</span>
+                            <span class="ruqaa-font">المونتاج</span>
+                            <span class="ruqaa-font">التسليم</span>
+                        </div>
+                    </div>
+                    
+                    <!-- كروت دوارة -->
+                    <div class="rotating-cards">
+                        <div class="card-3d">
+                            <div class="card-face card-front">
+                                <i class="fas fa-cut"></i>
+                                <h4 class="ruqaa-font">قص وتجميع</h4>
+                            </div>
+                            <div class="card-face card-back">
+                                <p class="naskh-font">تقطيع دقيق للفيديو مع الحفاظ على التسلسل القصصي</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card-3d">
+                            <div class="card-face card-front">
+                                <i class="fas fa-magic"></i>
+                                <h4 class="ruqaa-font">تأثيرات بصرية</h4>
+                            </div>
+                            <div class="card-face card-back">
+                                <p class="naskh-font">إضافة مؤثرات بصرية احترافية تناسب المحتوى</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- موجات القسم -->
+        <div class="section-waves">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="section skills-section">
+        <div class="section-header">
+            <h2 class="section-title ruqaa-font">المهارات</h2>
+            <div class="section-subtitle naskh-font">إمكانياتي الاحترافية</div>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="skills-container">
+            <div class="skill-radar">
+                <canvas id="radarChart" width="400" height="400"></canvas>
+            </div>
+            
+            <div class="skill-bars">
+                <div class="skill-category">
+                    <h3 class="category-title ruqaa-font">
+                        <i class="fas fa-video"></i>
+                        مهارات المونتاج
+                    </h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name ruqaa-font">مونتاج الفيديو</span>
+                            <span class="skill-value naskh-font">95%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-progress neon" data-width="95">
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name ruqaa-font">الموشن جرافيك</span>
+                            <span class="skill-value naskh-font">90%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-progress neon" data-width="90">
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name ruqaa-font">الإخراج السينمائي</span>
+                            <span class="skill-value naskh-font">88%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-progress neon" data-width="88">
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title ruqaa-font">
+                        <i class="fas fa-paint-brush"></i>
+                        مهارات التصميم
+                    </h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name ruqaa-font">التصميم الجرافيكي</span>
+                            <span class="skill-value naskh-font">85%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-progress neon" data-width="85">
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name ruqaa-font">تلوين الفيديو</span>
+                            <span class="skill-value naskh-font">75%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-progress neon" data-width="75">
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name ruqaa-font">المكساج الصوتي</span>
+                            <span class="skill-value naskh-font">80%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-progress neon" data-width="80">
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- دوائر متحركة -->
+        <div class="floating-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <!-- قسم البرامج -->
+    <section id="software" class="section software-section">
+        <div class="section-header">
+            <h2 class="section-title ruqaa-font">البرامج</h2>
+            <div class="section-subtitle naskh-font">أدواتي الاحترافية</div>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="software-showcase">
+            <div class="software-slider">
+                <div class="slider-track">
+                    <!-- برنامج 1 -->
+                    <div class="software-card floating">
+                        <div class="card-3d">
+                            <div class="software-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <h3 class="software-name ruqaa-font">Premiere Pro</h3>
+                            <div class="software-level">
+                                <div class="level-bar">
+                                    <div class="level-progress" data-level="95"></div>
+                                </div>
+                                <span class="level-percent naskh-font">95%</span>
+                            </div>
+                            <div class="software-desc naskh-font">مونتاج فيديو احترافي</div>
+                            <div class="software-badge ruqaa-font">البرنامج الرئيسي</div>
+                        </div>
+                    </div>
+                    
+                    <!-- برنامج 2 -->
+                    <div class="software-card floating">
+                        <div class="card-3d">
+                            <div class="software-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h3 class="software-name ruqaa-font">After Effects</h3>
+                            <div class="software-level">
+                                <div class="level-bar">
+                                    <div class="level-progress" data-level="90"></div>
+                                </div>
+                                <span class="level-percent naskh-font">90%</span>
+                            </div>
+                            <div class="software-desc naskh-font">موشن جرافيك متقدم</div>
+                        </div>
+                    </div>
+                    
+                    <!-- برنامج 3 -->
+                    <div class="software-card floating">
+                        <div class="card-3d">
+                            <div class="software-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="software-name ruqaa-font">Photoshop</h3>
+                            <div class="software-level">
+                                <div class="level-bar">
+                                    <div class="level-progress" data-level="85"></div>
+                                </div>
+                                <span class="level-percent naskh-font">85%</span>
+                            </div>
+                            <div class="software-desc naskh-font">تصميم جرافيكي</div>
+                        </div>
+                    </div>
+                    
+                    <!-- برنامج 4 -->
+                    <div class="software-card floating">
+                        <div class="card-3d">
+                            <div class="software-icon">
+                                <i class="fas fa-volume-up"></i>
+                            </div>
+                            <h3 class="software-name ruqaa-font">Audition</h3>
+                            <div class="software-level">
+                                <div class="level-bar">
+                                    <div class="level-progress" data-level="80"></div>
+                                </div>
+                                <span class="level-percent naskh-font">80%</span>
+                            </div>
+                            <div class="software-desc naskh-font">مونتاج صوتي</div>
+                        </div>
+                    </div>
+                    
+                    <!-- برنامج 5 -->
+                    <div class="software-card floating">
+                        <div class="card-3d">
+                            <div class="software-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="software-name ruqaa-font">CapCut Pro</h3>
+                            <div class="software-level">
+                                <div class="level-bar">
+                                    <div class="level-progress" data-level="88"></div>
+                                </div>
+                                <span class="level-percent naskh-font">88%</span>
+                            </div>
+                            <div class="software-desc naskh-font">مونتاج سريع</div>
+                        </div>
+                    </div>
+                    
+                    <!-- برنامج 6 -->
+                    <div class="software-card floating">
+                        <div class="card-3d">
+                            <div class="software-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h3 class="software-name ruqaa-font">DaVinci Resolve</h3>
+                            <div class="software-level">
+                                <div class="level-bar">
+                                    <div class="level-progress" data-level="75"></div>
+                                </div>
+                                <span class="level-percent naskh-font">75%</span>
+                            </div>
+                            <div class="software-desc naskh-font">تلوين احترافي</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="slider-btn next-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- مؤشرات البرامج -->
+        <div class="software-indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </section>
+
+    <!-- قسم الباقات -->
+    <section id="pricing" class="section pricing-section">
+        <div class="section-header">
+            <h2 class="section-title ruqaa-font">باقات الأسعار</h2>
+            <div class="section-subtitle naskh-font">اختر الباقة المناسبة لمشروعك</div>
+            <div class="section-line"></div>
+            <p class="currency-note ruqaa-font">جميع الأسعار بالجنيه المصري (EGP)</p>
+        </div>
+        
+        <div class="pricing-showcase">
+            <!-- باقة 1 -->
+            <div class="pricing-card floating">
+                <div class="card-sparkle"></div>
+                <div class="card-header">
+                    <div class="plan-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="plan-name ruqaa-font">الباقة الأساسية</h3>
+                    <div class="plan-price">
+                        <span class="price ruqaa-font">500</span>
+                        <span class="currency naskh-font">جنيه</span>
+                    </div>
+                    <div class="plan-badge ruqaa-font">مناسبة للمبتدئين</div>
+                </div>
+                
+                <div class="card-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">مونتاج فيديو حتى 5 دقائق</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">تقطيع وتجميع المشاهد</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">إضافة موسيقى خلفية</span>
+                    </div>
+                    <div class="feature disabled">
+                        <i class="fas fa-times-circle"></i>
+                        <span class="naskh-font disabled">موشن جرافيك</span>
+                    </div>
+                    <div class="feature disabled">
+                        <i class="fas fa-times-circle"></i>
+                        <span class="naskh-font disabled">تصميم جرافيكي</span>
+                    </div>
+                </div>
+                
+                <button class="plan-button pulse ruqaa-font">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>اختر الباقة</span>
+                </button>
+                
+                <div class="card-popular ruqaa-font">الأكثر طلبًا</div>
+            </div>
+            
+            <!-- باقة 2 -->
+            <div class="pricing-card premium floating">
+                <div class="card-sparkle"></div>
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <div class="plan-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="plan-name ruqaa-font">الباقة المتقدمة</h3>
+                    <div class="plan-price">
+                        <span class="price ruqaa-font">1200</span>
+                        <span class="currency naskh-font">جنيه</span>
+                    </div>
+                    <div class="plan-badge ruqaa-font">الأفضل للمحتوى</div>
+                </div>
+                
+                <div class="card-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">مونتاج فيديو حتى 15 دقيقة</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">موشن جرافيك أساسي</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">تصميم جرافيكي للفيديو</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">تلوين فيديو احترافي</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">مونتاج صوتي متقدم</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">مراجعات غير محدودة</span>
+                    </div>
+                </div>
+                
+                <button class="plan-button premium-btn pulse ruqaa-font">
+                    <i class="fas fa-bolt"></i>
+                    <span>اختر الباقة المميزة</span>
+                </button>
+                
+                <div class="card-best ruqaa-font">⭐ الأفضل ⭐</div>
+            </div>
+            
+            <!-- باقة 3 -->
+            <div class="pricing-card floating">
+                <div class="card-sparkle"></div>
+                <div class="card-header">
+                    <div class="plan-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="plan-name ruqaa-font">باقة الموشن جرافيك</h3>
+                    <div class="plan-price">
+                        <span class="price ruqaa-font">2000</span>
+                        <span class="currency naskh-font">جنيه</span>
+                    </div>
+                    <div class="plan-badge ruqaa-font">للرسوم المتحركة</div>
+                </div>
+                
+                <div class="card-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">موشن جرافيك احترافي</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">تحريك إنفوجرافيك</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">تصميم شعار متحرك</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">فيديو دعائي متحرك</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">تصميم جرافيكي مخصص</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="naskh-font">دعم فني لمدة أسبوع</span>
+                    </div>
+                </div>
+                
+                <button class="plan-button pulse ruqaa-font">
+                    <i class="fas fa-play-circle"></i>
+                    <span>اختر الباقة</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- باقة مخصصة -->
+        <div class="custom-plan">
+            <div class="custom-card floating">
+                <div class="custom-icon">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="ruqaa-font">مشروع مخصص؟</h3>
+                <p class="naskh-font">إذا كان لديك مشروع خاص يحتاج إلى عمل مخصص، يمكننا مناقشة التفاصيل والسعر معًا</p>
+                <button class="custom-button pulse ruqaa-font">
+                    <i class="fas fa-comments"></i>
+                    <span>اطلب عرض سعر مخصص</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- جسور متحركة -->
+        <div class="floating-bridges">
+            <div class="bridge"></div>
+            <div class="bridge"></div>
+            <div class="bridge"></div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2 class="section-title ruqaa-font">تواصل معي</h2>
+            <div class="section-subtitle naskh-font">لأي استفسار أو طلب خدمة</div>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <!-- بطاقة واتساب -->
+                <div class="contact-card floating whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 class="ruqaa-font">واتساب / تيليجرام</h3>
+                        <p class="naskh-font">+20 11 14592159</p>
+                        <a href="https://wa.me/201114592159" target="_blank" class="contact-btn pulse ruqaa-font">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>أرسل رسالة</span>
+                        </a>
+                    </div>
+                    <div class="contact-glow"></div>
+                </div>
+                
+                <!-- بطاقة إنستجرام -->
+                <div class="contact-card floating instagram">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 class="ruqaa-font">إنستجرام</h3>
+                        <p class="naskh-font">@youssef_hamdy_shehata</p>
+                        <a href="https://www.instagram.com/youssef_hamdy_shehata?igsh=MW9sZDZ0MTNpdXB5YQ==" target="_blank" class="contact-btn pulse ruqaa-font">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>تابعني</span>
+                        </a>
+                    </div>
+                    <div class="contact-glow"></div>
+                </div>
+                
+                <!-- بطاقة فيسبوك -->
+                <div class="contact-card floating facebook">
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 class="ruqaa-font">فيسبوك</h3>
+                        <p class="naskh-font">يوسف حمدي شحاته</p>
+                        <a href="https://www.facebook.com/share/1GZqQUJk2J/" target="_blank" class="contact-btn pulse ruqaa-font">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>زر الصفحة</span>
+                        </a>
+                    </div>
+                    <div class="contact-glow"></div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <div class="form-container floating">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="ruqaa-font">
+                                <i class="fas fa-user"></i>
+                                اسمك الكريم
+                            </label>
+                            <input type="text" id="name" placeholder="أدخل اسمك..." required class="naskh-font">
+                            <div class="form-focus-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="ruqaa-font">
+                                <i class="fas fa-envelope"></i>
+                                البريد الإلكتروني
+                            </label>
+                            <input type="email" id="email" placeholder="example@email.com" required class="naskh-font">
+                            <div class="form-focus-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="ruqaa-font">
+                                <i class="fas fa-tag"></i>
+                                موضوع الرسالة
+                            </label>
+                            <input type="text" id="subject" placeholder="عنوان رسالتك..." required class="naskh-font">
+                            <div class="form-focus-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="ruqaa-font">
+                                <i class="fas fa-comment-dots"></i>
+                                تفاصيل طلبك
+                            </label>
+                            <textarea id="message" rows="5" placeholder="اكتب تفاصيل طلبك أو استفسارك هنا..." required class="naskh-font"></textarea>
+                            <div class="form-focus-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-button pulse ruqaa-font">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>إرسال الرسالة</span>
+                            <div class="button-sparkle"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- موجات التواصل -->
+        <div class="contact-waves">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- شعار متحرك -->
+            <div class="footer-logo">
+                <div class="logo-animation">
+                    <div class="logo-text pulse ruqaa-font">YHS</div>
+                    <div class="logo-sub ruqaa-font">استديو المونتاج والرسوم المتحركة</div>
+                </div>
+            </div>
+            
+            <!-- روابط سريعة -->
+            <div class="footer-links">
+                <a href="#home" class="footer-link floating ruqaa-font">
+                    <i class="fas fa-home"></i>
+                    الرئيسية
+                </a>
+                <a href="#about" class="footer-link floating ruqaa-font">
+                    <i class="fas fa-user"></i>
+                    من أنا
+                </a>
+                <a href="#pricing" class="footer-link floating ruqaa-font">
+                    <i class="fas fa-tags"></i>
+                    الباقات
+                </a>
+                <a href="#contact" class="footer-link floating ruqaa-font">
+                    <i class="fas fa-envelope"></i>
+                    تواصل
+                </a>
+            </div>
+            
+            <!-- المطور -->
+            <div class="footer-developer">
+                <div class="developer-card floating">
+                    <i class="fas fa-code"></i>
+                    <span class="naskh-font">تطوير: <a href="https://alzozos.youware.app" target="_blank" class="developer-link ruqaa-font">Alzoz OS</a></span>
+                </div>
+            </div>
+            
+            <!-- حقوق النشر -->
+            <div class="footer-copyright">
+                <p class="naskh-font">© 2026 جميع الحقوق محفوظة | يوسف حمدي شحاته | استديو المونتاج والرسوم المتحركة</p>
+                <div class="copyright-line"></div>
+            </div>
+        </div>
+        
+        <!-- تأثيرات الفوتر -->
+        <div class="footer-effects">
+            <div class="effect"></div>
+            <div class="effect"></div>
+            <div class="effect"></div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button class="back-to-top floating" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- رسائل التنبيه -->
+    <div class="alert-container" id="alertContainer"></div>
+
+    <!-- مكتبة Chart.js للرسم البياني -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
